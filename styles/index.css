@@ -33,37 +33,63 @@ nav li a{
     text-decoration: none;
     color: #424242;
 }
+.banner-container{
+   
+    text-align: center;
+    margin: 0px auto;
+ }
 .headline{
       color: #131313;
       text-align: center;
+      margin: 0px auto;
       font-family: Work Sans;
       font-size: 4rem;
       font-weight: 700;
 }
-.discription{
+ .description{
     color:  #727272;
     text-align: center;
+    margin: 0px auto;
+    margin-top: 30px;
     font-family: Work Sans;
     font-size: 1rem;
     font-weight: 400;
 }
-.btn-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 3.3rem;
-}
+
 .primary-btn{
     color: #FFF;
     text-align: center;
+    margin: 0px auto;
+    margin-top: 30px;
     font-size: 1.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
     background: #FF900E;
     border: 0px;
+    padding: 1.3rem 1.4rem;
     margin-bottom: 70px;
+} 
+
+.banner-container img{
+    width: 100%;
+}   
+/* responsive style mobile  */
+@media screen and (max-width:576px) {
+
+    nav{
+       flex-direction: column; 
+    }
+    header{
+        padding: 20px;
+    }
 }
-.banner-image-container{
-   display: flex;
-   justify-content: center;
- 
+/* responsive style tablet or medium device  */
+@media screen and (min-width:577px) and (max-width:960px) {
+
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 40px;
+    }
 }
