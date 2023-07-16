@@ -73,7 +73,7 @@ nav li a{
 .banner-container img{
     width: 100%;
 }   
-/* responsive style mobile  */
+/* responsive header section for mobile  */
 @media screen and (max-width:576px) {
 
     nav{
@@ -83,7 +83,7 @@ nav li a{
         padding: 20px;
     }
 }
-/* responsive style tablet or medium device  */
+/* responsive header section for tablet or medium device  */
 @media screen and (min-width:577px) and (max-width:960px) {
 
     nav{
@@ -94,6 +94,7 @@ nav li a{
     }
 }
 /* main section start */
+/* teams section */
 main{
     max-width: 1440px;
     margin: 100px auto;
@@ -102,12 +103,16 @@ main{
     gap: 80px;
     display: flex;
     align-items: center;
+
 }
 .teams-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     border-radius: .6px;
+}
+.teams-img-container img{
+    width: 100%;
 }
 .teams-content-title{
     color: #727272;
@@ -130,3 +135,38 @@ main{
     font-style: normal;
     font-weight: 400;
 }
+/* teams section end  */
+/* teams section responsive start */
+/* responsive teams section for mobile  */
+@media  screen and (max-width: 576px) {
+    .teams-container{
+        flex-direction: column-reverse;
+        padding: 0 rem auto;
+        text-align: justify;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+/* responsive teams section for tablet or medium device */
+@media  screen and (min-width: 577px) and (max-width:960px) {
+    /* .teams-content-title{
+       text-align: center;
+    }
+    .primary-btn{
+        margin: ;
+    } */
+
+    .teams-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    
+    }
+    .teams-img-container{
+        margin: 0px;
+        grid-template-columns: 1fr;
+    }
+}
+/* teams section end */
+/*  */
